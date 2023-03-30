@@ -186,7 +186,7 @@ Flags:
 
 .. csv-table::
    :header: "j (seg. number)", "pjo (seg. node 0)", "pj1 (seg. node 1)", "boundary flag"
-   :widths: 20, 20, 10, 10
+   :widths: 20, 5, 5, 5
 
    "0", "0", "1", "1"
    "1", "1", "2", "1"
