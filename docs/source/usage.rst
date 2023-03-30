@@ -143,12 +143,5 @@ In .poly file
 We recommend you draw a schematic such as the one in "rifting-2d.poly" to illustrate your layers with labeled nodal points (shown below):
 .. image:: ./images/rifting_poly_schema.png
 
-Next
-.. _dynearthsol3d.cxx:
-
-dynearthsol.cxx
-***************
-* See Flowchart for summary of main function
-
 .. image:: ./images/flowchart3_main_pwpt.png
    
