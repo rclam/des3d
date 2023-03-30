@@ -165,9 +165,32 @@ As in the example .poly file, specify the number of total nodes and number of di
    "1", "0.0", "-35.0e3"
    "2", "0.0", "-150.0e3"
    "3", "500.0e3", "-150.0e3"
+   "...", "...", "..."
+   "12", "200.0e3", "-35.0e3"
+   
 
 .. _segm:
 
 segments
 ============
-As in the example .poly file, specify the number of total segments connecting any 2 nodes. Then specify the segment number (starting from 0) and the nodes it connects (e.g. in the picture of rifting-2d.poly's scheme above, segment 0 connects nodes 0 and 1. Segment 9 connects nodes 10 and 12.)
+As in the example .poly file, specify the number of total segments connecting any 2 nodes. Then specify the segment number (starting from 0) and the nodes it connects (e.g. in the picture of rifting-2d.poly's scheme above, segment 0 connects nodes 0 and 1. Segment 9 connects nodes 10 and 12.) Finally, assign a boundary flag.
+Flags:
+
+
+* 0: not a boundary
+* 1: left boundary (x0)
+* 2: right boundary (x1)
+* 16: bottom boundary (z0)
+* 32: top boundary (z1)
+
+
+.. csv-table::
+   :header: "j (seg. number)", "pjo (seg. node 0)", "pj1 (seg. node 1)", "boundary flag"
+   :widths: 20, 20, 10, 10
+
+   "0", "0", "1", "1"
+   "1", "1", "2", "1"
+   "2", "2", "6", "16"
+   "3", "6", "7", "16"
+   "...", "...", "..."
+   "15", "8", "7", "0"
