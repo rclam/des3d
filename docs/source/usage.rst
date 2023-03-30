@@ -149,3 +149,7 @@ In this file, you will define
 * node coordinates
 * segments connecting coordinates
 * regions
+
+* Some of the simulation outputs can be disabled by editing ``2vtk.py`` and
+  ``output.cxx``. A more convenient control will be provided in the future.
+* The processed VTU (node and cell data) and VTP (marker data) files can be visualized with `Paraview <https://paraview.org>`_ or `Visit <https://visit-dav.github.io/visit-website/index.html>`_.
