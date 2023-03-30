@@ -194,7 +194,7 @@ Flags:
    "15", "8", "7", "0"
    
 
----
+***
 
 3. **Regions**
 As in the example .poly file, specify the number of total regions. Then specify the region number (starting from 0) and a point within that region (we recommend choosing a fairly central node here). The ``mattype`` specifies which value in the .cfg file [mat] paramter should be applied to the region. Finally, specify the max element size (m^2) for the region. If there is no upper limit on element size, use ``-1``.
