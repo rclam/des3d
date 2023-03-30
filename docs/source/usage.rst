@@ -129,7 +129,7 @@ Currently, DES is only set-up to run one rheology at a time, so all layers in a 
 
 .. _configreq:
 
-In Configuration file
+In .cfg file
 ============
 
 1. In [mesh] section, specify ``poly_filename`` with the [name].poly 
@@ -141,14 +141,12 @@ In Configuration file
 In .poly file
 ============
 We recommend you draw a schematic such as the one in "rifting-2d.poly" to illustrate your layers with labeled nodal points (shown below):
-.. code-block:: console
 
-   #
-#  0-----------------5
-#  |                 |
-#  1--10--12 11---8--4 
-#  |   \   \9/   /   |
-#  |    \       /    |
-#  |     \     /     |
-#  2------6---7------3
-#
+   0-----------------5
+   |                 |
+   1--10--12 11---8--4 
+   |   \   \9/   /   |
+   |    \       /    |
+   |     \     /     |
+   2------6---7------3
+
