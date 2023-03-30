@@ -157,12 +157,14 @@ node coordinates
 ============
 As in the example .poly file, specify the number of total nodes and number of dimensions. Then specify the node number (starting from 0) and the x- and y-coordinates.
 
-.. csv-table:: node coordinates
+.. csv-table::
    :header: "i (node number)", "xi (x-coord)", "yi (y-coord)"
    :widths: 20, 20, 10
 
-   "0", "0.0", 0.0
+   "0", "0.0", "0.0"
    "1", "0.0", "-35.0e3"
+   "2", "0.0", "-150.0e3"
+   "3", "500.0e3", "-150.0e3"
 
 .. _segm:
 
