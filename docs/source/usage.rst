@@ -134,7 +134,7 @@ In .cfg file
 
 1. In [mesh] section, specify ``poly_filename`` with the [name].poly 
 
-2. In [mat] section, specify ``num_materials``
+2. In [mat] section, specify ``num_materials``. For any mat parameters (e.g. density rho0) which differ by material type, separate the bracketed values by a comma.
 
 .. _polyreq:
 
@@ -194,3 +194,22 @@ Flags:
    "3", "6", "7", "16"
    "...", "...", "..."
    "15", "8", "7", "0"
+   
+   
+   .. _region:
+
+regions
+============
+As in the example .poly file, specify the number of total regions. Then specify the region number (starting from 0) and a point within that region (we recommend choosing a fairly central node here). The ``mattype`` specifies which value in the .cfg file [mat] paramter should be applied to the region. Finally, specify the max element size (m^2) for the region. If there is no upper limit on element size, use ``-1``.
+
+
+
+.. csv-table::
+   :header: "k (region num.)", "xk (x-coord of some point)", "zk (z-coord of some point)", "mattype", "size"
+   :widths: 20, 5, 5, 5, 5
+
+   "0", "250e3", "-20e3", "0", "2e7"
+   "1", "250e3", "-80e3", "1", "4e7"
+   "2",   "1e3", "-80e3", "1", "-1"
+   "3",  "450e3", "-80e3", "1", "-1"
+
