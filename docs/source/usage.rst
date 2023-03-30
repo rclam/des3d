@@ -151,4 +151,4 @@ In this file, you will define
 * segments connecting coordinates
 * regions
 
-* The processed VTU (node and cell data) and VTP (marker data) files can be visualized with `Paraview <https://paraview.org>`_ or `Visit <https://visit-dav.github.io/visit-website/index.html>`_.
+
