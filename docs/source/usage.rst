@@ -141,12 +141,4 @@ In .cfg file
 In .poly file
 ============
 We recommend you draw a schematic such as the one in "rifting-2d.poly" to illustrate your layers with labeled nodal points (shown below):
-
-   0-----------------5
-   |                 |
-   1--10--12 11---8--4 
-   |   \   \9/   /   |
-   |    \       /    |
-   |     \     /     |
-   2------6---7------3
-
+.. image:: ./images/rifting_poly_schema.png
