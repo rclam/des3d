@@ -125,23 +125,30 @@ To see more usage information, i.e., producing .VTP files for marker data, run
 Multilayer Model
 *******************
 
-A multilayer example is available in the DynEarthSol/examples/ folder. Look at files "rifting-2d.cfg" and "rifting-2d.poly"
+Currently, DES is only set-up to run one rheology at a time, so all layers in a model must have the same rheology time (e.g. elasto-visco-plastic or elasto-plastic). A multilayer example is available in the folder DynEarthSol/examples/ ; look at files "rifting-2d.cfg" and "rifting-2d.poly". The .poly file holds information about the layer geometry and the configuration file tells DES where to look for that information.
 
-To convert the binary output files to VTU files, run
+.. _configreq:
 
+In Configuration file
+============
+
+1. In [mesh] section, specify ``poly_filename`` with the [name].poly 
+
+2. In [mat] section, specify ``num_materials``
+
+.. _polyreq:
+
+In .poly file
+============
+We recommend you draw a schematic such as the one in "rifting-2d.poly" to illustrate your layers with labeled nodal points (shown below):
 .. code-block:: console
 
-   2vtk.py modelname
-
-``poly_filename`` should be defined in the config file.
-
-To see more usage information, i.e., producing .VTP files for marker data, run
-
-.. code-block:: console
-
-   2vtk.py -h
-
-* Some of the simulation outputs can be disabled by editing ``2vtk.py`` and
-  ``output.cxx``. A more convenient control will be provided in the future.
-* The processed VTU (node and cell data) and VTP (marker data) files can be visualized with `Paraview <https://paraview.org>`_ or `Visit <https://visit-dav.github.io/visit-website/index.html>`_.
-
+   #
+#  0-----------------5
+#  |                 |
+#  1--10--12 11---8--4 
+#  |   \   \9/   /   |
+#  |    \       /    |
+#  |     \     /     |
+#  2------6---7------3
+#
