@@ -152,7 +152,8 @@ In this file, you will define
 * regions
 
 ---
-**Node coordinates**
+
+1. **Node coordinates**
 
 
 As in the example .poly file, specify the number of total nodes and number of dimensions. Then specify the node number (starting from 0) and the x- and y-coordinates.
@@ -170,7 +171,8 @@ As in the example .poly file, specify the number of total nodes and number of di
    
 
 ---
-**Segments**
+
+2. **Segments**
 
 As in the example .poly file, specify the number of total segments connecting any 2 nodes. Then specify the segment number (starting from 0) and the nodes it connects (e.g. in the picture of rifting-2d.poly's scheme above, segment 0 connects nodes 0 and 1. Segment 9 connects nodes 10 and 12.) Finally, assign a boundary flag.
 Flags:
@@ -196,7 +198,8 @@ Flags:
    
 
 ---
-**Regions**
+
+3. **Regions**
 
 
 As in the example .poly file, specify the number of total regions. Then specify the region number (starting from 0) and a point within that region (we recommend choosing a fairly central node here). The ``mattype`` specifies which value in the .cfg file [mat] paramter should be applied to the region. Finally, specify the max element size (m^2) for the region. If there is no upper limit on element size, use ``-1``.
