@@ -144,4 +144,8 @@ We recommend you draw a schematic such as the one in "rifting-2d.poly" to illust
 
 .. image:: ./images/rifting_poly_schema.png
          :width: 200
-   
+
+In this file, you will define
+* node coordinates
+* segments connecting coordinates
+* regions
