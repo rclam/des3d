@@ -147,15 +147,13 @@ We recommend you draw a schematic such as the one in "rifting-2d.poly" to illust
 
 In this file, you will define
 
-* node coordinates
-* segments connecting coordinates
-* regions
++ node coordinates
++ segments connecting coordinates
++ regions
 
 ---
 
 1. **Node coordinates**
-
-
 As in the example .poly file, specify the number of total nodes and number of dimensions. Then specify the node number (starting from 0) and the x- and y-coordinates.
 
 .. csv-table::
@@ -173,7 +171,6 @@ As in the example .poly file, specify the number of total nodes and number of di
 ---
 
 2. **Segments**
-
 As in the example .poly file, specify the number of total segments connecting any 2 nodes. Then specify the segment number (starting from 0) and the nodes it connects (e.g. in the picture of rifting-2d.poly's scheme above, segment 0 connects nodes 0 and 1. Segment 9 connects nodes 10 and 12.) Finally, assign a boundary flag.
 Flags:
 
