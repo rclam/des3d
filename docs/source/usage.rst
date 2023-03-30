@@ -146,10 +146,8 @@ We recommend you draw a schematic such as the one in "rifting-2d.poly" to illust
          :width: 200
 
 In this file, you will define
-* node coordinates
 * segments connecting coordinates
 * regions
 
-* Some of the simulation outputs can be disabled by editing ``2vtk.py`` and
-  ``output.cxx``. A more convenient control will be provided in the future.
+* node coordinates
 * The processed VTU (node and cell data) and VTP (marker data) files can be visualized with `Paraview <https://paraview.org>`_ or `Visit <https://visit-dav.github.io/visit-website/index.html>`_.
