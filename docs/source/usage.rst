@@ -151,10 +151,13 @@ In this file, you will define
 * segments connecting coordinates
 * regions
 
+---
+
+
 .. _coord:
 
 Node coordinates
-*******************
+============
 As in the example .poly file, specify the number of total nodes and number of dimensions. Then specify the node number (starting from 0) and the x- and y-coordinates.
 
 .. csv-table::
@@ -168,6 +171,9 @@ As in the example .poly file, specify the number of total nodes and number of di
    "...", "...", "..."
    "12", "200.0e3", "-35.0e3"
    
+
+---
+
 
 .. _segm:
 
@@ -195,6 +201,9 @@ Flags:
    "...", "...", "..."
    "15", "8", "7", "0"
    
+
+---
+
    
    .. _region:
 
